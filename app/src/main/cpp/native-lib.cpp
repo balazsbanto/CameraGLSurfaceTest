@@ -13,7 +13,7 @@ using namespace cv;
 extern "C" JNIEXPORT void
 
 JNICALL
-Java_com_blade_testopencv_MyGLSurfaceView_processFrame(JNIEnv *env, jobject /* this */,
+Java_com_blade_testopencv_MyGLSurfaceViewKt_processFrame(JNIEnv *env, jobject /* this */,
                                                                       jint texIn, jint texOut,
                                                                       jint w, jint h,
                                                                       jboolean frontFacing) {

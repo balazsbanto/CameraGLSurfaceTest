@@ -24,7 +24,7 @@ public class CameraActivity extends Activity {
         System.loadLibrary("native-lib");
     }
 
-    private MyGLSurfaceView mView;
+    private MyGLSurfaceViewKt mView;
     private Switch mSwitch;
     private static final int MY_PERMISSIONS_REQUEST_CAMERA = 1337;
 
@@ -77,7 +77,7 @@ public class CameraActivity extends Activity {
             }
         });
 
-        mView = (MyGLSurfaceView) findViewById(R.id.my_gl_surface_view);
+        mView = (MyGLSurfaceViewKt) findViewById(R.id.my_gl_surface_view);
         mView.setMaxCameraPreviewSize(1280, 920);
         mView.setCameraTextureListener(mView);
     }

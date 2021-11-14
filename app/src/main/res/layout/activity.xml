@@ -52,7 +52,7 @@
                 app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.blade.testopencv.MyGLSurfaceView
+        <com.blade.testopencv.MyGLSurfaceViewKt
             android:id="@+id/my_gl_surface_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
