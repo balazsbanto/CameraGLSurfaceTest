@@ -11,7 +11,7 @@ import org.opencv.android.CameraGLSurfaceView.CameraTextureListener
 
 class MyGLSurfaceViewKt(context: Context?, attrs: AttributeSet?) :
     CameraGLSurfaceView(context, attrs), CameraTextureListener {
-    protected var frontFacing = false
+    var frontFacing = false
     override fun onTouchEvent(e: MotionEvent): Boolean {
         if (e.action == MotionEvent.ACTION_DOWN) (context as Activity).openOptionsMenu()
         return true
